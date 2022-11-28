@@ -39,7 +39,7 @@ title_font = pygame.font.Font(gameplay_font_dir, 50)
 autor_font = pygame.font.Font(gameplay_font_dir, 10)
 
 # init images
-logo = pygame.image.load('Assets/Images/simon_logo.png')
+logo = pygame.image.load('./Assets/Images/simon_logo.png')
 big_logo = pygame.transform.scale(logo, (300, 300))
 start_button = pygame.image.load('./Assets/Images/start_button.png')
 start_button = pygame.transform.scale(start_button, (240, 90))
