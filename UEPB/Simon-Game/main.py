@@ -26,12 +26,6 @@ light_blue =   (0   , 0   , 255)
 white =        (255 , 255 , 255)
 black =        (0   , 0   , 0  )
 
-# init current color vars
-green_color = green
-red_color = red
-yellow_color = yellow
-blue_color = blue
-
 # init fonts
 gameplay_font_dir = './Assets/Fonts/Gameplay.ttf'
 font = pygame.font.Font(gameplay_font_dir, 20)
@@ -47,6 +41,7 @@ again_button = pygame.image.load('./Assets/Images/again_button.png')
 again_button = pygame.transform.scale(again_button, (240, 90))
 exit_button = pygame.image.load('./Assets/Images/exit_button.png')
 exit_button = pygame.transform.scale(exit_button, (240, 90))
+
 # init sounds
 green_sound = pygame.mixer.Sound('./Assets/Audio/green.wav')
 red_sound = pygame.mixer.Sound('./Assets/Audio/red.wav')
@@ -261,7 +256,7 @@ def lose_screen():
 
 def start_menu():
     waiting = True
-    menu_music.play(-1)
+    menu_music.play()
     logo_bob = 150
     title_text = title_font.render('Simon', True, white)
 
@@ -313,5 +308,3 @@ def start_menu():
 #############
 
 start_menu()
-
-
